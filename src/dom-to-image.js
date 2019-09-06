@@ -455,6 +455,7 @@
                 image.onload = function () {
                     resolve(image);
                 };
+                image.crossOrigin = 'use-credentials';
                 image.onerror = reject;
                 image.src = uri;
             });
